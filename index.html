@@ -4,16 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AM-Chat</title>
-    <script src="chat.js"></script>
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="DataChannel.min.js"></script>
+
   </head>
   <body>
     <h1>A.M. Chat</h1>
     <table>
       <tr>
-        <td>Verbinden mit Url:</td>
-        <td><input id="connectPort"/> <button type="button" id="connectButton">OK</button></td>
+        <td>Verbinden mit:</td>
+        <td><input id="webURL" value="ws://echo.websocket.org"/> <button type="button" id="connectButton">OK</button></td>
       </tr>
-
+   <tr>
+        <td>Nachricht senden:</td>
+        <td><input id="Message"/> <button type="button" id="Send">Senden</button></td>
+      </tr>
     </table>
+
+        <script src="chat.js"></script>
   </body>
 </html>
