@@ -10,16 +10,26 @@
   </head>
   <body>
     <h1>A.M. Chat</h1>
+    <form action="#">
     <table>
       <tr>
         <td>Verbinden mit:</td>
         <td><input id="webURL" value="ws://echo.websocket.org"/> <button type="button" id="connectButton">OK</button></td>
       </tr>
-   <tr>
-        <td>Nachricht senden:</td>
-        <td><input id="Message"/> <button type="button" id="Send">Senden</button></td>
-      </tr>
-    </table>
+
+<tr>
+  <td colspan="2">
+<div id="Antwort">
+</div>
+</td>
+
+</tr>
+  <tr>
+       <td>Nachricht senden:</td>
+       <td><input id="Message"/> <button type="submit" id="Send">Senden</button></td>
+     </tr>
+   </table>
+ </form>
 
         <script src="chat.js"></script>
   </body>
